@@ -4,10 +4,62 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
+  outline: 0;
+  text-decoration: none;
 }
 
 body{
   background-color: #ffffff;
   font-family: "Inter", sans-serif;
   color: #000000;
+  overflow: hidden;
+}
+
+/* header design start */
+header{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.navbar{
+  display: flex;
+  gap: 16px;
+}
+
+.navbar a{
+  font-family: inherit;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.left-nav{
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+button{
+  display: inline-block;
+  padding: 12px 25px;
+  font-weight: 500;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.btn-one{
+  background-color: #f1f1f1;
+}
+
+.btn-two{
+  background-color: #000000;
+  color: white;
 }

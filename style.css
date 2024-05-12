@@ -13,16 +13,14 @@ body{
   background-color: #ffffff;
   font-family: "Inter", sans-serif;
   color: #000000;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* header design start */
-header{
-  width: 1200px;
-  margin: 0 auto;
-}
 
 nav{
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,7 +47,7 @@ nav{
 
 button{
   display: inline-block;
-  padding: 12px 25px;
+  padding: 10px 25px;
   font-weight: 500;
   border-radius: 20px;
   font-size: 18px;
@@ -62,4 +60,62 @@ button{
 .btn-two{
   background-color: #000000;
   color: white;
+}
+
+/* hero section start */
+.hero-section{
+  background-image: url("./Images/Rectangle1.png");
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container{
+  background-color: #ffffff;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.hero-container > h3{
+  font-size: 2rem;
+  font-weight: 500px;
+}
+
+.hero-select{
+  display: flex;
+  gap: 30px;
+}
+
+.hero-select > select{
+  background-color: #ECECEC;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.hero-input  {
+  width: 90%;
+  display: flex;
+  gap: 20px;
+}
+
+.hero-input > input{
+  width: 70%;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 3px;
+  background-color: #ECECEC;
+}
+
+.hero-input > button{
+  background-color: #00EBC7;
+  width: 30%;
+  font-size: 18px;
+  font-weight: 600;
 }

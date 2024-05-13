@@ -70,8 +70,22 @@ button{
   width: 100vw;
   height: 600px;
   display: flex;
+  flex-direction: column;
+  gap: 5rem;
   align-items: center;
   justify-content: center;
+
+  & button{
+    background-color: transparent;
+    border: 2px solid #ECECEC;
+    color: #ECECEC;
+
+    & a{
+      text-decoration: underline;
+      font-family: inherit;
+      font-size: 1.3rem;
+    }
+  }
 }
 
 .hero-container{

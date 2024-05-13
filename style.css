@@ -95,13 +95,8 @@ button{
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  padding: 25px;
+  padding: 35px;
   border-radius: 5px;
-}
-
-.hero-container > h3{
-  font-size: 2rem;
-  font-weight: 500px;
 }
 
 .hero-select{
@@ -403,6 +398,10 @@ footer{
   gap: 10px;
   padding: 25px;
   border-radius: 5px;
+
+  img{
+    width: 130px;
+  }
  }
 
 .hero-container > h3{
@@ -670,6 +669,10 @@ footer{
   gap: 10px;
   padding: 25px;
   border-radius: 5px;
+
+  & img{
+    width: 220px;
+  }
  }
 
 .hero-container > h3{

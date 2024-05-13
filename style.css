@@ -66,7 +66,8 @@ button{
 .hero-section{
   background-image: url("./Images/Rectangle1.png");
   background-size: cover;
-  width: 100%;
+  background-repeat: no-repeat;
+  width: 100vw;
   height: 600px;
   display: flex;
   align-items: center;
@@ -141,7 +142,7 @@ button{
   margin-top: 3rem;
 
   & h3{
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 500;
   }
 
@@ -160,8 +161,9 @@ button{
 
   .card-container{
     display: grid;
-    gap: 3rem;
-    grid-template-columns: repeat(3,1fr);
+    gap: 0.7rem;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
     padding: 0 4rem;
     margin-top: 4rem;
     text-align: center;
@@ -170,7 +172,7 @@ button{
       .card-detail{
         display: flex;
         flex-direction: column;
-        gap: 1.2rem;
+        gap: 1rem;
         text-align: center;
       }
 
@@ -191,24 +193,17 @@ button{
         color: #161616;
         text-decoration: underline;
         font-weight: 600;
+        font-size: 13px;
       }
     }
   }
 }
-.card{
-  width: 100%;
-  padding: 1rem;
-}
-.card-line{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
-}
+
 
 .card-horizental{
-  border-top: 1px solid #000000;
-  width: 100px;
+  border-top: 2px solid #000000;
+  width: 80px;
 }
 
 /* buy sell section start */
@@ -225,7 +220,7 @@ hr.buy-sell-horizental{
 }
 .buy-sell-container{
   width: 1200px;
-  margin: 2rem auto;
+  margin: 0 auto;
   padding: 0 1rem;
   display: flex;
   gap: 6rem;
@@ -365,12 +360,6 @@ footer{
   display: none;
 }
 
-.navbar a{
-  font-family: inherit;
-  color: #000000;
-  font-size: 20px;
-  font-weight: 500;
-}
 
 .left-nav{
   display: flex;
@@ -379,9 +368,7 @@ footer{
 }
 
   
-
-
-  .hero-section{
+.hero-section{
   background-image: url("./Images/Rectangle1.png");
   background-size: cover;
   width: 100%;
@@ -394,7 +381,7 @@ footer{
 
  .hero-container{
   background-color: #ffffff;
-  width: 80%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -428,19 +415,21 @@ footer{
 }
 
 .hero-input > input{
-  width: 100%;
+  width: 60%;
   font-size: 18px;
   font-weight: 600;
   border-radius: 3px;
   background-color: #ECECEC;
   padding: 10px ;
+  margin: 0 auto;
 }
 
 .hero-input > button{
   background-color: #00EBC7;
-  width: 100%;
+  width: 60%;
   font-size: 18px;
   font-weight: 600;
+   margin: 0 auto;
 } 
 
 .favourites{
@@ -455,7 +444,7 @@ footer{
   }
 
   & img{
-    width: 420px;
+    width: 350px;
   }
 }
 
@@ -620,7 +609,456 @@ footer{
       padding: 1rem 1rem;
     }
   }
+}
+}
 
+/* responsive for medium device */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  
+  nav{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+}
+
+.logo img{
+  width: 100px;
+}
+
+.navbar{
+  display: none;
+}
+
+.hero-section{
+  background-image: url("./Images/Rectangle1.png");
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+ .hero-container{
+  background-color: #ffffff;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 25px;
+  border-radius: 5px;
+ }
+
+.hero-container > h3{
+  font-size: 1.3rem;
+  font-weight: 500px;
+}
+
+.hero-select{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-select > select{
+  background-color: #ECECEC;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.hero-input  {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-input > input{
+  width: 70%;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 3px;
+  background-color: #ECECEC;
+  padding: 10px ;
+   margin: 0 auto;
+}
+
+.hero-input > button{
+  background-color: #00EBC7;
+  width: 70%;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 auto;
+}  
+
+  .favourites{
+  background-color: #FDE24F;
+  padding: 30px 10px;
+  text-align: center;
+
+  & h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+
+  & img{
+    width: 500px;
+  }
+}
+.feature{
+  width: 100%;
+  margin: 3rem auto;
+  padding: 0.5rem 1rem;
+
+  & h3{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .btn-feature{
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-container{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(1,1fr);
+    padding: 0 2rem;
+    margin-top: 4rem;
+    text-align: center;
+
+    .card{
+      .card-detail{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        text-align: center;
+      }
+
+      & h4{
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-top: .7rem;
+      }
+
+      & p{
+        font-size: 1.2rem;
+        text-align:center;
+        color: #535353;
+      }
+
+      & a{
+        font-family: inherit;
+        color: #161616;
+        text-decoration: underline;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.card{
+  padding: 1rem;
+}
+
+.card-horizental{
+  display: none;
+}
+
+hr.buy-sell-horizental{
+    border-top: 1px solid #000000;
+  }
+
+.vl {
+  display: none;
+}
+
+.buy-sell{
+  margin-top: 3rem;
+}
+.buy-sell-container{
+  width: 100%;
+  margin: 1rem auto;
+  padding: 0 .3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  & h3{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .buy-container{
+    width: 100%;
+
+   .buy-btn{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
+
+    & button{
+      background-color: #000000;
+      color: #f1f1f1;
+      border-radius: 10px;
+      margin-top: 25px;
+    }
+  }
+
+  .sell-container{
+    width: 100%;
+
+    .sell-btn{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
+
+    & button{
+      background-color: #000000;
+      color: #f1f1f1;
+      border-radius: 10px;
+      margin-top: 25px;
+    }
+  }
+}
+
+.sign-up{
+  background-color: #CFBAFF;
+  padding: 3rem 2rem;
+
+  & h3{
+    text-align: justify;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+}
+
+footer{
+  .footer{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    padding:  3rem;
+  }
+
+  .footer-detail {
+    & p{
+      width: 100%;
+      margin: 0 auto;
+      text-align: justify;
+      font-size: 8px;
+      padding: 1rem 1rem;
+    }
+  }
+}
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  nav{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+
+
+/* hero section start */
+.hero-container{
+  background-color: #ffffff;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+
+/* main section start */
+.favourites{
+  background-color: #FDE24F;
+  padding: 50px 28px;
+  text-align: center;
+
+  & h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+
+  & img{
+    width: 850px;
+  }
+}
+
+.feature{
+  width: 100%;
+  margin: 3rem auto;
+  padding: 0.5rem 1rem;
+
+  & h3{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .btn-feature{
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-container{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(1,1fr);
+    padding: 0 2rem;
+    margin-top: 4rem;
+    text-align: center;
+
+    .card{
+      .card-detail{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        text-align: center;
+      }
+
+      & h4{
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-top: .7rem;
+      }
+
+      & p{
+        font-size: 1.2rem;
+        text-align:center;
+        color: #535353;
+      }
+
+      & a{
+        font-family: inherit;
+        color: #161616;
+        text-decoration: underline;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.card{
+  padding: 1rem;
+}
+
+.card-horizental{
+  display: none;
+}
+
+hr.buy-sell-horizental{
+    border-top: 1px solid #000000;
+  }
+
+.vl {
+  display: none;
+}
+
+ .buy-sell{
+  margin-top: 3rem;
+}
+.buy-sell-container{
+  width: 100%;
+  margin: 1rem auto;
+  padding: 0 .3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  & h3{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .buy-container{
+    width: 100%;
+
+   .buy-btn{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
+
+    & button{
+      background-color: #000000;
+      color: #f1f1f1;
+      border-radius: 10px;
+      margin-top: 25px;
+    }
+  }
+
+  .sell-container{
+    width: 100%;
+
+    .sell-btn{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
+
+    & button{
+      background-color: #000000;
+      color: #f1f1f1;
+      border-radius: 10px;
+      margin-top: 25px;
+    }
+  }
+}
+
+.sign-up{
+  background-color: #CFBAFF;
+  padding: 4rem 2rem;
+
+  & h3{
+    text-align: justify;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+footer{
+  .footer{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    padding:  3rem;
+  }
+
+  .footer-detail {
+    & p{
+      width: 100%;
+      margin: 0 auto;
+      text-align: justify;
+      font-size: 8px;
+      padding: 1rem 1rem;
+    }
+  }
 }
 }
 

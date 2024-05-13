@@ -133,3 +133,65 @@ button{
     margin-bottom: 18px;
   }
 }
+
+/* feature section start */
+.feature{
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 3rem;
+
+  & h3{
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+
+  .btn-feature{
+    display: flex;
+    justify-content: center;
+  }
+
+  button{
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    margin: 4rem 0 0 0;
+    border-radius: 30px;
+  }
+
+  .card-container{
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0 4rem;
+    margin-top: 4rem;
+    text-align: center;
+
+    .card{
+      .card-detail{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        text-align: center;
+      }
+
+      & h4{
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-top: .7rem;
+      }
+
+      & p{
+        font-size: 1.2rem;
+        text-align:center;
+        color: #535353;
+      }
+
+      & a{
+        font-family: inherit;
+        color: #161616;
+        text-decoration: underline;
+        font-weight: 600;
+      }
+    }
+  }
+}
